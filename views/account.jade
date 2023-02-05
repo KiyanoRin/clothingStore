@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title
+      | Page Title
+    |     
+    link(rel='stylesheet', href='/stylesheets/account.css')
+  |   
+  body
+    form(method='post')
+      label(for='name') Name:
+      |       
+      input#name(type='text', name='name', required='')
+      |       
+      |       
+      label(for='password') Password:
+      |       
+      input#password(type='password', name='password', required='')
+      |       
+      |       
+      label(for='email') Email:
+      |       
+      input#email(type='email', name='email', required='')
+      |       
+      |       
+      label(for='phone') Phone:
+      |       
+      input#phone(type='tel', name='phone', required='')
+      |       
+      |       
+      label(for='address') Address:
+      |       
+      textarea#address(name='address', required='')
+      |             
+      |       
+      input(type='submit', value='Submit')
